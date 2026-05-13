@@ -156,7 +156,7 @@ export default function Home() {
           <h1>Modern HRMS for Modern Teams</h1>
           <p className="hero-copy">
             Eliminate manual HR work. Manage employee records, attendance, payroll, 
-            performance, and production tracking with Hrxora's unified platform.
+            performance, and production tracking with Hrxora&apos;s unified platform.
           </p>
           <div className="hero-actions">
             <a className="btn primary" href="#modules">
