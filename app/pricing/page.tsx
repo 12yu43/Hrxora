@@ -37,7 +37,7 @@ export default function PricingPage() {
       <section className="inner-hero">
         <h1>Simple, Transparent Pricing</h1>
         <p>
-          Choose the plan that fits your company's size and needs. No hidden fees, 
+          Choose the plan that fits your company&apos;s size and needs. No hidden fees, 
           cancel or upgrade at any time.
         </p>
       </section>

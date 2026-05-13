@@ -48,32 +48,32 @@ export default function Footer() {
         <div className="footer-links-grid">
           <div className="footer-group">
             <h4>Quick Links</h4>
-            <a href="#top">Home</a>
-            <a href="#modules">Features</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#">Careers</a>
-            <a href="#">Blog</a>
+            <a href="/">Home</a>
+            <a href="/features">Features</a>
+            <a href="/pricing">Pricing</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+            <a href="/careers">Careers</a>
+            <a href="/blog">Blog</a>
           </div>
           <div className="footer-group">
             <h4>HRMS Features</h4>
-            <a href="#">Payroll Management</a>
-            <a href="#">Attendance Tracking</a>
-            <a href="#">Leave Management</a>
-            <a href="#">Recruitment</a>
-            <a href="#">Employee Self Service</a>
-            <a href="#">Performance Management</a>
-            <a href="#">Mobile App</a>
+            <a href="/features">Payroll Management</a>
+            <a href="/features">Attendance Tracking</a>
+            <a href="/features">Leave Management</a>
+            <a href="/features">Recruitment</a>
+            <a href="/features">Employee Self Service</a>
+            <a href="/features">Performance Management</a>
+            <a href="/features">Mobile App</a>
           </div>
           <div className="footer-group">
             <h4>Resources</h4>
-            <a href="#">Help Center</a>
-            <a href="#">Documentation</a>
-            <a href="#">FAQs</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Support</a>
+            <a href="/faq">Help Center</a>
+            <a href="/faq">Documentation</a>
+            <a href="/faq">FAQs</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms & Conditions</a>
+            <a href="/contact">Support</a>
           </div>
           <div className="footer-group">
             <h4>Contact Details</h4>

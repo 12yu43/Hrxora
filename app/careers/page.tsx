@@ -33,7 +33,7 @@ export default function CareersPage() {
       <section className="inner-hero">
         <h1>Join the Hrxora Team</h1>
         <p>
-          We're looking for passionate individuals to help us build the next generation 
+          We&apos;re looking for passionate individuals to help us build the next generation 
           of workforce management tools.
         </p>
       </section>
@@ -66,8 +66,8 @@ export default function CareersPage() {
         </div>
 
         <div className="cta-card" style={{ marginTop: '4rem', padding: '3rem' }}>
-          <h3>Don't see a fit?</h3>
-          <p>We're always looking for great talent. Send your resume to careers@hrxora.com</p>
+          <h3>Don&apos;t see a fit?</h3>
+          <p>We&apos;re always looking for great talent. Send your resume to careers@hrxora.com</p>
         </div>
       </section>
     </main>

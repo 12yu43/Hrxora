@@ -29,10 +29,10 @@ export default function Navbar() {
         Hrxora
       </a>
       <div className="nav-links" aria-label="Primary navigation">
-        <a href="#modules">Modules</a>
-        <a href="#production">Production</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#reports">Reports</a>
+        <a href="/">Home</a>
+        <a href="/features">Features</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
       </div>
       <div className="nav-actions">
         <button 
