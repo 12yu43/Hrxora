@@ -703,35 +703,147 @@ h1 {
   color: var(--ink);
 }
 
+/* Inner Pages Styles */
+.inner-page {
+  padding-top: 2rem;
+}
+
+.inner-hero {
+  padding: 6rem clamp(1rem, 4vw, 4.5rem) 4rem;
+  text-align: center;
+  background: var(--soft-blue);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1.5rem;
+  max-width: 20ch;
+  margin-inline: auto;
+}
+
+.inner-hero p {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.content-section {
+  padding: 5rem clamp(1rem, 4vw, 4.5rem);
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.prose {
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.prose h2 {
+  color: var(--ink);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
 .footer {
   padding: 4rem clamp(1rem, 4vw, 4.5rem) 2rem;
   border-top: 1px solid var(--line);
   background: var(--paper);
 }
 
+.footer-newsletter {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.newsletter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  max-width: 400px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  height: 3.2rem;
+  padding: 0 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--bg);
+  color: var(--ink);
+}
+
 .footer-content {
-  display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand {
+  max-width: 100%;
 }
 
 .footer-brand p {
-  margin-top: 1rem;
-  max-width: 300px;
+  margin: 1.5rem 0;
+  max-width: 500px;
   color: var(--muted);
+  line-height: 1.6;
 }
 
-.footer-links {
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-socials a {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.8rem;
+  background: var(--soft-blue);
+  color: var(--blue);
+  transition: all 0.2s;
+}
+
+.footer-socials a:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
 }
 
 .footer-group h4 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   color: var(--ink);
   font-size: 1rem;
+  font-weight: 800;
 }
 
 .footer-group a {
@@ -746,6 +858,19 @@ h1 {
   color: var(--blue);
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-item svg {
+  color: var(--blue);
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -756,14 +881,81 @@ h1 {
   font-size: 0.85rem;
 }
 
-.made-with {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+/* CTA Section */
+.cta-section {
+  padding-top: 0;
 }
 
-.made-with svg {
-  color: var(--coral);
+.cta-card {
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  padding: 5rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn.large {
+  min-height: 3.5rem;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-card .btn.ghost {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cta-card .btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cta-card .btn.primary {
+  background: white;
+  color: var(--blue);
+}
+
+@media (max-width: 980px) {
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .newsletter-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 }
 
 

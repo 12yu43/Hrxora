@@ -1,19 +1,49 @@
+# IDE
 .idea/
+.vscode/
+
+# Python Virtual Environments
 .venv/
-logs/*
-!logs/.keep
-*.pyc
-*.pyo
 venv/
 env/
 botenv/
+
+# Python Cache
 __pycache__/
-.DS_Store
+*.pyc
+*.pyo
 .pytest_cache/
-.vscode
-model_files/
 .ruff_cache/
-.idea/
+
+# Logs
+logs/*
+!logs/.keep
+
+# OS Files
+.DS_Store
+
+# Model Files
+model_files/
+
+# Node Modules
 node_modules/
+
+# Build Folders
 build/
-node_modules
+
+# Next.js
+.next/
+out/
+
+# Environment Files
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Misc
+dist/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -406,6 +406,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="section cta-section">
+        <div className="cta-card">
+          <div className="cta-content">
+            <h2>Ready to simplify HR operations?</h2>
+            <p>Join 2000+ leading brands using Hrxora to build the perfect workplace.</p>
+            <div className="cta-actions">
+              <button className="btn primary large">Book Demo</button>
+              <button className="btn ghost large">Start Free Trial</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

@@ -1,35 +1,94 @@
-import { Heart } from "lucide-react";
+import { 
+  Heart, 
+  Linkedin, 
+  Instagram, 
+  Facebook, 
+  Twitter, 
+  Youtube, 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Send 
+} from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="footer">
+      <div className="footer-newsletter">
+        <div className="newsletter-content">
+          <h3>Subscribe for HR updates & product news</h3>
+          <div className="newsletter-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" />
+            <button className="btn primary">
+              Subscribe <Send size={16} />
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div className="footer-content">
         <div className="footer-brand">
           <div className="brand">
             <span className="brand-mark">Hx</span>
             Hrxora
           </div>
-          <p>Lightweight HRMS, Payroll and Production Tracking system.</p>
+          <p>
+            Smart HRMS platform for payroll, attendance, employee management & recruitment. 
+            Simplifying HR operations for modern teams.
+          </p>
+          <div className="footer-socials">
+            <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
+            <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+            <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
+            <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
+            <a href="#" aria-label="YouTube"><Youtube size={20} /></a>
+          </div>
         </div>
         
-        <div className="footer-links">
+        <div className="footer-links-grid">
           <div className="footer-group">
-            <h4>Product</h4>
-            <a href="#modules">Modules</a>
-            <a href="#production">Production</a>
-            <a href="#apis">APIs</a>
+            <h4>Quick Links</h4>
+            <a href="#top">Home</a>
+            <a href="#modules">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+          </div>
+          <div className="footer-group">
+            <h4>HRMS Features</h4>
+            <a href="#">Payroll Management</a>
+            <a href="#">Attendance Tracking</a>
+            <a href="#">Leave Management</a>
+            <a href="#">Recruitment</a>
+            <a href="#">Employee Self Service</a>
+            <a href="#">Performance Management</a>
+            <a href="#">Mobile App</a>
           </div>
           <div className="footer-group">
             <h4>Resources</h4>
+            <a href="#">Help Center</a>
             <a href="#">Documentation</a>
-            <a href="#">Support</a>
+            <a href="#">FAQs</a>
             <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
           </div>
           <div className="footer-group">
-            <h4>Contact</h4>
-            <a href="mailto:support@hrxora.com">Email Us</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
+            <h4>Contact Details</h4>
+            <div className="contact-item">
+              <Mail size={16} />
+              <span>support@hrxora.com</span>
+            </div>
+            <div className="contact-item">
+              <Phone size={16} />
+              <span>+91 99999 00000</span>
+            </div>
+            <div className="contact-item">
+              <MapPin size={16} />
+              <span>Noida, India</span>
+            </div>
           </div>
         </div>
       </div>
